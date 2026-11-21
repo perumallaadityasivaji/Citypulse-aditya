@@ -144,7 +144,7 @@ top
 
 Press `q` to exit `top`.
 
-![WSL command check](wsl-installed.png)
+![WSL command check](wsl - installed.png)
 
 ## Screenshot Summary
 
@@ -153,4 +153,4 @@ Press `q` to exit `top`.
 | `task1.png` | Creating and removing a directory |
 | `1.png` | Linux file listing and directory/file commands |
 | `2.png` | Terminal environment and basic system commands |
-| `wsl-installed.png` | Checking whether WSL is available in the environment |
+| `wsl - installed.png` | Checking whether WSL is available in the environment |

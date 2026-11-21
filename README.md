@@ -71,3 +71,86 @@ du -sh folder-name
 ```
 
 ![Terminal commands and file listing](1.png)
+
+## Task 4: Linux Permissions
+
+Linux files and directories have three permission types:
+
+| Permission | Symbol | Meaning |
+| --- | --- | --- |
+| Read | `r` | View file contents or list directory contents |
+| Write | `w` | Modify a file or change directory contents |
+| Execute | `x` | Run a file as a program or enter a directory |
+
+Permissions are assigned to:
+
+- The file owner
+- The owner's group
+- Other users
+
+Use `chmod` to change permissions:
+
+```bash
+# Add execute permission for the owner
+chmod u+x script.sh
+
+# Give the owner read and write permissions
+chmod u+rw file.txt
+
+# Make a file readable and writable by everyone
+chmod 666 file.txt
+
+# Give the owner full permissions and others read/execute permissions
+chmod 755 script.sh
+```
+
+View permissions with:
+
+```bash
+ls -l
+```
+
+Example permission modes:
+
+- `644`: owner can read/write; group and others can read
+- `755`: owner can read/write/execute; group and others can read/execute
+- `777`: all users have read, write, and execute permissions
+
+## Task 5: List Running Processes
+
+Use `ps` to view processes for the current terminal:
+
+```bash
+ps
+```
+
+Use `ps aux` to list processes from the entire system:
+
+```bash
+ps aux
+```
+
+To search for a specific process:
+
+```bash
+ps aux | grep process-name
+```
+
+An alternative, interactive process viewer is:
+
+```bash
+top
+```
+
+Press `q` to exit `top`.
+
+![WSL command check](wsl-installed.png)
+
+## Screenshot Summary
+
+| Screenshot | Description |
+| --- | --- |
+| `task1.png` | Creating and removing a directory |
+| `1.png` | Linux file listing and directory/file commands |
+| `2.png` | Terminal environment and basic system commands |
+| `wsl-installed.png` | Checking whether WSL is available in the environment |
